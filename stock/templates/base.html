@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pharmacy App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h2>Pharmacy Stock App</h2>
+        {% if request.user.is_authenticated %}
+        <div class="links">
+            <a href="/dashboard/">Dashboard</a>
+            <a href="/medicines/">Medicines</a>
+            <a href="/logout/">Logout</a>
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+/* ------------------ GLOBAL ------------------ */
+body {
+    font-family: "Poppins", Tahoma, sans-serif;
+    background: #eef2f7;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+input{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ------------------ NAVBAR ------------------ */
+.navbar {
+    background: #1f77d0;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.navbar h2 {
+    color: #fff;
+    font-size: 22px;
+    margin: 0;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    opacity: 0.75;
+}
+
+/* ------------------ CONTAINER ------------------ */
+.container {
+    width: 85%;
+    margin: 35px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* ------------------ BUTTONS ------------------ */
+button, .btn {
+    background: #1f77d0;
+    color: white !important;
+    padding: 11px 20px;
+    border-radius: 6px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:hover, .btn:hover {
+    background: #165ba8;
+}
+
+.edit {
+    color: #1976d2;
+    font-weight: 600;
+}
+
+.delete {
+    color: #d9534f;
+    font-weight: 600;
+}
+
+/* ------------------ TABLE ------------------ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table tr:nth-child(even) {
+    background: #f6f9fc;
+}
+
+table th {
+    background: #1f77d0;
+    color: white;
+    padding: 12px;
+    font-weight: 600;
+}
+
+table td {
+    padding: 12px;
+    border-bottom: 1px solid #dfe6ee;
+}
+
+table tr:hover {
+    background: #e8f1fb;
+}
+
+/* ------------------ FORMS ------------------ */
+form {
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    gap: 10px;
+}
+
+input, select, textarea {
+    padding: 12px;
+    border: 1px solid #cdd4dc;
+    border-radius: 6px;
+    font-size: 15px;
+    margin-bottom: 18px;
+    background: #fbfdff;
+    transition: 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #1f77d0;
+    outline: none;
+    box-shadow: 0 0 5px rgba(31, 119, 208, 0.3);
+}
+
+/* ------------------ CARDS ------------------ */
+.card {
+    padding: 20px;
+    background: #1f77d0;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.15);
+}
+
+.warning {
+    background: #e67e22;
+}
+
+/* ------------------ LOGIN BOX ------------------ */
+.login-container {
+    width: 35%;
+    margin: 60px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.error {
+    color: red;
+    text-align: center;
+    font-size: 15px;
+}

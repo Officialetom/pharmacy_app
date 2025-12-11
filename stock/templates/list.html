@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Medicines</h2>
+
+<a class="btn" href="/medicines/add/">Add Medicine</a>
+
+<table>
+    <tr>
+        <th>Name</th><th>Category</th><th>Qty</th><th>Price</th><th>Expiry</th><th>Actions</th>
+    </tr>
+
+    {% for m in medicines %}
+    <tr>
+        <td>{{ m.name }}</td>
+        <td>{{ m.category }}</td>
+        <td>{{ m.quantity }}</td>
+        <td>₦{{ m.price }}</td>
+        <td>{{ m.expiry_date }}</td>
+        <td>
+            <a class="edit" href="/medicines/edit/{{ m.id }}/">Edit</a>
+            <a class="delete" href="/medicines/delete/{{ m.id }}/">Delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
